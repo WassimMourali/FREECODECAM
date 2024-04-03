@@ -1,0 +1,142 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Documentation</title>
+</head>
+<body>
+        <nav id="navbar">
+            <header>Navigation</header>
+            <li><a href="#introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#getting_started" class="nav-link">Getting Started</a></li>
+            <li><a href="#components" class="nav-link">Components</a></li>
+            <li><a href="#programming" class="nav-link">Programming</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+        </nav>
+        
+        <main id="main-doc">
+            <section id="introduction" class="main-section">
+                <header>Introduction</header>
+                <p>Introduction to Arduino...</p>
+                <p>More details about Arduino...</p>
+                <p>Further information on Arduino...</p>
+                <code>void setup() {
+      // Initialize code
+    }</code>
+                <code>void loop() {
+      // Main loop code
+    }</code>
+            </section>
+            
+            <section id="getting_started" class="main-section">
+                <header>Getting Started</header>
+                <li><p>Steps to get started with Arduino...</p></li>
+                <li><p>Setting up the Arduino IDE...</p></li>
+                <li><p>Connecting Arduino to your computer...</p></li>
+                <code>#include <Servo.h></code>
+                <code>Servo myservo;</code>
+            </section>
+            
+            <section id="components" class="main-section">
+                <header>Components</header>
+                <li><p>Various components used in Arduino projects...</p></li>
+                <li><p>Examples of sensors...</p></li>
+                <p>Examples of actuators...</p>
+                <code>int sensorValue = analogRead(A0);</code>
+                <code>digitalWrite(ledPin, HIGH);</code>
+            </section>
+            
+            <section id="programming" class="main-section">
+                <header>Programming</header>
+                <p>Programming concepts in Arduino...</p>
+                <p>Example code snippets...</p>
+                <p>Control structures in Arduino...</p>
+                <code>if (sensorValue > threshold) {</code>
+                <code>  // Do something</code>
+                <code>}</code>
+            </section>
+            
+            <section id="projects" class="main-section">
+                <header>Projects</header>
+                <p>Sample projects to try with Arduino...</p>
+                <p>Project 1: LED Blink</p>
+                <p>Project 2: Temperature Sensor</p>
+                <code>int ledPin = 13;</code>
+                <code>int threshold = 500;</code>
+            </section>
+        </main>
+    </body>    
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    width: 200px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+#main-doc {
+    margin-left: 220px;
+    padding: 20px;
+    width: 80%;
+}
+
+.main-section {
+    margin-bottom: 40px;
+}
+
+header {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    #navbar {
+        width: 100%;
+        position: static;
+    }
+    #main-doc {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+li {
+    list-style: none;
+}
+
+** end of undefined **
+

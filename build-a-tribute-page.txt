@@ -1,0 +1,54 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=*, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+<main id="main">
+    <h1 id="title">Président de la République Tunisienne "Habib Bourguiba"</h1>
+    <figure id="img-div">
+        <img src="https://www.radiofrance.fr/s3/cruiser-production/2023/03/e8a1b562-8d5e-440f-a065-38850ff689e5/560x315_sc_neo-destour.jpg" id="image" alt="habib bourguiba">
+        <figcaption id="img-caption">Habib Bourguiba, chef du parti nationaliste le Néo-Destour, 23 mars 1956, porté en triomphe après qu'il a signé l'indépendance de la Tunisie et la fin du protectorat françai</figcaption>
+
+    </figure>
+    <div id="tribute-info">
+        <ul>
+            <li><strong>1957:</strong> <span>Independence from France</span></li>
+            <li><strong>1959:</strong> <span>Declaration of Tunisia as a Republic</span></li>
+            <li><strong>1963:</strong> <span>Establishment of the Socialist Destourian Party</span></li>
+            <li><strong>1963:</strong> <span>Assumed Presidency for Life</span></li>
+            <li><strong>1975:</strong> <span>Dismissal of Prime Minister Hedi Nouira</span></li>
+            <li><strong>1977:</strong> <span>Introduction of the Code of Personal Status</span></li>
+            <li><strong>1981:</strong> <span>Dismissal from Presidency by Prime Minister Mohammed Mzali</span></li>
+            <li><strong>1987:</strong> <span>Replacement by Zine El Abidine Ben Ali</span></li>
+            <li><strong>2000:</strong> <span>Death of Habib Bourguiba</span></li>
+          </ul>
+    </div>
+    for more details about the president of the Republic of Tunisia "Habib Bourguiba" visit <a id="tribute-link" href="https://fr.wikipedia.org/wiki/Habib_Bourguiba" target="_blank">wikipedia</a>
+</main> 
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+#img-div {
+  text-align: center;
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto; /* Centers the image horizontally */
+}
+
+
+** end of undefined **
+

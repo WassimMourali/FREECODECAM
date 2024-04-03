@@ -1,0 +1,290 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>SURVEY-FORM</title>
+</head>
+<body>
+<header>
+    <h1 id="title">GaliLink Technologie Survey Form</h1>
+    <p id="description">Thank you for participating in our survey. Your feedback is invaluable to us as we strive to improve our Services</p>
+
+    <form id="survey-form">
+
+    <div class="groupe-1">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" name="name" id="name" placeholder="Your Name" required>
+    </div>
+    <div class="groupe-1">
+        <label for="username">UserName</label>
+        <input type="text" name="username" id="username" placeholder="Your User Name" required>
+    </div>
+    <div class="groupe-1">
+        <label for="age" id="number-label">Age (optional)</label>
+        <input type="number" min="10" max="65" name="age" id="number" placeholder="Your Age" required>
+    </div>
+    <div class="groupe-1">
+        <label for="name" id="email-label">E-mail</label>
+        <input type="email" name="name" id="email" placeholder="block1.block2@public_stmp.tn" required>
+    </div>
+    <div class="groupe-1">
+        <label for="Select your Domain Job">Domain Work</label>
+            <select name="check_domain" id="dropdown" required>
+                <option value="select" disabled selected>----Select option----</option>
+                <option value="IOT">IOT & Industrie 4.0</option>
+                <option value="WEB">WEB Developpement</option>
+                <option value="ANDROID">Mobile Android Developpement</option>
+            </select>
+        
+    </div>
+
+    <p class="P2">What are the main challenges you face when using mobile applications or web services?</p>
+    <div class="answer-radio">
+        
+        <input type="radio" id="interface" name="challenge" value="interface">
+        <label for="interface">Unintuitive user interface</label><br>
+
+        <input type="radio" id="interface" name="challenge" value="performance">
+        <label for="performance">Slow performance</label><br>
+
+        <input type="radio" id="interface" name="challenge" value="security">
+        <label for="security">Security issues</label><br>
+
+        <input type="radio" id="interface" name="challenge" value="features">
+        <label for="features">Lack of features</label><br>
+
+        <input type="radio" id="interface" name="challenge" value="support">
+        <label for="support">Lack of customer support</label><br>
+
+        <input type="radio" id="interface" name="challenge" value="others" checked>
+        <label for="others">Others (Please specify)</label><br>
+        </div>
+
+        
+    <p class="P2">What types of IoT devices do you currently use, if any?</p>
+    <div class="answer-check">
+        
+        <input type="checkbox" id="temperature" name="device" value="temperature">
+        <label for="temperature">Temperature/Humidity Sensors</label><br>
+
+        <input type="checkbox" id="securityCamera" name="device" value="securityCamera">
+        <label for="securityCamera">Connected Security Cameras</label><br>
+
+        <input type="checkbox" id="smartThermostat" name="device" value="smartThermostat">
+        <label for="smartThermostat">Smart Thermostats</label><br>
+
+        <input type="checkbox" id="smartLighting" name="device" value="smartLighting">
+        <label for="smartLighting">Smart Lighting</label><br>
+
+        <input type="checkbox" id="smartAppliances" name="device" value="smartAppliances">
+        <label for="smartAppliances">Smart Appliances</label><br>
+
+        <input type="checkbox" id="wearables" name="device" value="wearables">
+        <label for="wearables">Wearable Devices</label><br>
+
+        <input type="checkbox" id="others" name="device" value="others" checked>
+        <label for="others">Others (Please specify)</label><br>
+        </div>
+
+    <div>
+        <p class="P2">Any comments or suggestions?</p>
+        <textarea id="comments" class="input-textarea" name="comment" rows="10" cols="80" placeholder="Enter your comment here..."></textarea>
+    </div>
+
+    <input type="submit" value="submit" id="submit"><a href="index.html"></a>
+    </form>
+    
+
+</header>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(https://img.freepik.com/photos-gratuite/concept-strategie-partage-seminaire-reunion-gens-affaires_53876-13741.jpg?w=740&t=st=1712150352~exp=1712150952~hmac=bb04c9b428327ab091f2588b748c6553bc4b68bebbeb82c40f9843d555d60150);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 500;
+    color: #F0F8FF;
+    font-family: Roboto, serif;
+}
+
+#description {
+color: #F0F8FF;
+padding-bottom: 30px;
+font-style: italic;
+font-family: "Inter", sans-serif;
+font-optical-sizing: auto;
+font-weight: 100;
+font-variation-settings:
+  "slnt" 
+}
+
+.P2{
+    font-size: 20px ;
+    color: #E0FFFF;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+ input::placeholder {
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    color: green;
+    font-style: italic;
+    text-transform: lowercase;
+    padding-left: 15px;
+ }
+
+select option{
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    color: green;
+    font-style: italic;
+    text-transform: lowercase;
+    padding-left: 15px;
+ }
+
+ select {
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    color: green;
+    font-style: italic;
+    text-transform: lowercase;
+    padding-left: 15px;
+ }
+
+ textarea::placeholder {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    color: green;
+    font-style: italic;
+    text-transform: lowercase;
+    padding-left: 15px;
+ }
+
+form {
+    display: inline-block;
+    justify-content: center;
+    width: 50%;
+    padding: 20px 30px ;
+    text-align: left;  
+    border-radius: 9px;
+    background: linear-gradient(rgba(86, 163, 218, 0.7),rgba(52, 14, 203, 0.7));
+}
+
+#submit {
+    margin: 5px;
+    background: #ADFF2F;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+    font-weight: bolder;
+}
+#submit:hover {
+    margin: 5px;
+    background: #0BDA51;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+}
+#number::placeholder {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    color: green;
+    font-style: italic;
+    text-transform: lowercase;
+    padding-left: 15px;
+}
+#name::placeholder {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    color: green;
+    font-style: italic;
+    text-transform: lowercase;
+    padding-left: 15px;
+}
+#email::placeholder {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    color: green;
+    font-style: italic;
+    text-transform: lowercase;
+    padding-left: 15px;
+}
+a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bolder;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #F0F8FF;
+}
+textarea {
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+.groupe-1 label {
+    font-size: 20px;
+    width: 100%;
+    display: inline-block;
+    color:#B2FFFF ;
+    padding: 10px 0;
+}
+.groupe-1 input, select {
+    border-radius: 5px;
+    height: 25px;
+    width: 100%;
+}
+.answer-radio label {
+    font-size: 20px;
+    width: 200px;
+    color: #B2FFFF;
+    text-transform: lowercase;
+    font-weight: 100;
+}
+
+.answer-check label {
+    font-size: 20px;
+    width: 200px;
+    color: #B2FFFF;
+    text-transform: lowercase;
+}
+
+** end of undefined **
+
